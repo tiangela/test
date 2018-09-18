@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ООО «ЭнергоГрад»</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+    ._customer-main-title {
+      padding: 0;
+      margin: 0;
+      font-size: 24px;
+      font-family: Verdana, sans-serif;
+      text-align: center;
+    }
+
+    ._customer-title-item {
+      padding: 0;
+      margin: 0;
+      font-size: 24px;
+      font-family: Verdana, sans-serif;
+      text-align: center;
+    }
+
+    @media (min-width: 1024px) {
+      ._customer-wrapper h1 {
+          text-align: left;
+      }
+
+      ._customer-title-item {
+        text-align: left;
+      }
+
+    }
+
+    ._customer-advantages__item h3 {
+      padding: 0;
+      margin: 0;
+      font-size: 19px;
+      font-family: Verdana, sans-serif;
+    }
+
+    @media (min-width: 1024px) {
+      ._customer-advantages__item h3 {
+        font-weight: normal;
+      }
+    }
+
+    ._customer-wrapper {
+      width: 280px;
+      margin: 0 auto;
+      margin-top: 53px;
+      margin-bottom: 65px;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+      font-weight: normal;
+      line-height: normal;
+      color: #14163a;
+    }
+
+    @media (min-width: 768px) {
+      ._customer-wrapper {
+        width: 620px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      ._customer-wrapper {
+        width: 1227px;
+      }
+    }
+
+    ._customer-main-title {
+      margin-bottom: 30px;
+    }
+
+    ._customer-main-text {
+      font-size: 17px;
+      margin-bottom: 21px;
+    }
+
+    ._customer-advantages__text {
+      font-size: 17px;
+    }
+
+    ._customer-products {
+      margin-top: 32px;
+      margin-bottom: 35px;
+    }
+
+    ._customer-products__list {
+      margin: 0;
+      padding: 0;
+    }
+
+    ._customer-products__title {
+      margin-bottom: 20px;
+    }
+
+    ._customer-products__item {
+      width: 166px;
+      margin: 0 auto 30px;
+    }
+
+    ._customer-products__link {
+      text-decoration: none;
+      font-size: 14px;
+      color: #14163a;
+    }
+
+    ._customer-advantages {
+      margin-top: -7px;
+      margin-bottom: 35px;
+    }
+
+    ._customer-advantages__title {
+      margin-bottom: 34px;
+    }
+
+    ._customer-advantages__item {
+      margin-bottom: 30px;
+    }
+
+    ._customer-partners {
+      margin-bottom: 14px;
+    }
+
+    ._customer-partners__title {
+      margin-bottom: 28px;
+    }
+
+    ._customer-partners__list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    ._customer-partners__item {
+      margin-bottom: 30px;
+    }
+
+    ._customer-order {
+      text-align: center;
+      margin-bottom: 46px;
+    }
+
+    ._customer-order__title {
+      margin-bottom: 22px;
+    }
+
+    ._customer-order__step {
+      width: 120px;
+      margin: 0 auto;
+      position: relative;
+      padding-top: 120px;
+      padding-bottom: 85px;
+    }
+
+    ._customer-order__step--third {
+      padding-bottom: 0;
+    }
+
+    ._customer-order__step--first::before {
+      background-image: url("img/icon-search.png");
+    }
+
+    ._customer-order__step--second::before {
+      background-image: url("img/icon-chat-2.png");
+    }
+
+    ._customer-order__step--third::before {
+      background-image: url("img/icon-cash.png");
+    }
+
+    ._customer-order__step::before {
+      content: "";
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      top: 0;
+      left: 0;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    ._customer-order__step::after {
+      content: "";
+      position: absolute;
+      width: 3px;
+      height: 80px;
+      background-color: #0074cb;
+    }
+
+    ._customer-order__step--third::after {
+      width: 0;
+      height: 0;
+    }
+
+    ._customer-order__step p {
+      font-size: 14px;
+      position: relative;
+      width: 99px;
+      margin: 0 auto;
+      padding-top: 16px;
+    }
+
+    ._customer-delivery__title {
+      margin-bottom: 22px;
+    }
+
+    ._customer-delivery__item {
+      width: 190px;
+      text-align: center;
+      margin: 0 auto;
+      position: relative;
+      padding-top: 120px;
+      margin-bottom: 40px;
+      font-size: 14px;
+    }
+
+    ._customer-delivery__item--pickup::before {
+      background-image: url("img/icon-pickup.png");
+    }
+
+    ._customer-delivery__item--pek::before {
+      background-image: url("img/icon-pek.png");
+    }
+
+    ._customer-delivery__item--car::before {
+      background-image: url("img/icon-car.png");
+    }
+
+    ._customer-delivery__item::before {
+      content: "";
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      top: 0;
+      left: 35px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    ._customer-note {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 280px;
+      height: 184px;
+      border-radius: 15px;
+      background-color: #0074cb;
+      padding: 25px 30px 29px 32px;
+    }
+
+    ._customer-note__item {
+      color: #fff;
+      font-size: 14px;
+    }
+
+    ._customer-note__item p {
+      margin: 0;
+    }
+
+    ._customer-note__item span {
+      font-weight: bold;
+    }
+
+    ._customer-note__item--first {
+      margin-bottom: 18px;
+    }
+
+    @media (min-width: 768px) {
+      ._customer-products__title {
+        margin-bottom: 2px;
+      }
+      ._customer-products__list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+      }
+      ._customer-products__item {
+        margin: 20px 30px 0 0;
+      }
+      ._customer-partners__list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+      }
+      ._customer-order__wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+      }
+      ._customer-order__step {
+        padding-bottom: 0;
+        width: 120px;
+      }
+      ._customer-order__step p {
+        width: 130px;
+      }
+      ._customer-order__step--first p {
+        width: 99px;
+      }
+      ._customer-order__step::after {
+        width: 79px;
+        height: 3px;
+        top: 62px;
+        left: 124px;
+      }
+      ._customer-order__step--third::after {
+        width: 0;
+        height: 0;
+      }
+      ._customer-partners__item {
+        margin-left: 30px;
+      }
+      ._customer-delivery__wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      ._customer-products {
+        margin-bottom: 0;
+      }
+      ._customer-products__link:hover {
+        color: #0074cb;
+      }
+      ._customer-products__link:active {
+        color: #52b1f8;
+        opacity: 0.9;
+      }
+      ._customer-main-text {
+        text-align: left;
+        margin-top: 10px;
+      }
+      ._customer-advantages__text {
+        text-align: left;
+        margin-top: 7px;
+        margin-bottom: 20px;
+      }
+      ._customer-advantages {
+        width: 960px;
+        margin-bottom: 70px;
+      }
+      ._customer-advantages__item {
+        padding-left: 164px;
+        position: relative;
+      }
+      ._customer-advantages__item--quality {
+        margin-bottom: 44px;
+      }
+      ._customer-advantages__item--quality::before {
+        background-image: url("img/icon-quality.png");
+      }
+      ._customer-advantages__item--advice {
+        margin-bottom: 50px;
+      }
+      ._customer-advantages__item--advice::before {
+        background-image: url("img/icon-chat.png");
+        bottom: -10px;
+      }
+      ._customer-advantages__item--range {
+        margin-bottom: 60px;
+      }
+      ._customer-advantages__item--range::before {
+        background-image: url("img/icon-range.png");
+        bottom: -18px;
+      }
+      ._customer-advantages__item--sale {
+        margin-bottom: 63px;
+      }
+      ._customer-advantages__item--sale::before {
+        background-image: url("img/icon-sale.png");
+        bottom: -19px;
+      }
+      ._customer-advantages__item--showroom::before {
+        background-image: url("img/icon-show.png");
+        bottom: -20px;
+      }
+      ._customer-advantages__item::before {
+        content: "";
+        position: absolute;
+        width: 106px;
+        height: 106px;
+        left: 0;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      ._customer-partners__item {
+        margin-left: 0;
+        margin-right: 38px;
+      }
+      ._customer-partners__item--DKC {
+        margin-right: 30px;
+      }
+      ._customer-partners__item--DKC img {
+        width: 240px;
+      }
+      ._customer-partners__item--IEK {
+        margin-right: 31px;
+      }
+      ._customer-delivery__item p {
+        width: 167px;
+        margin-left: -27px;
+      }
+      ._customer-delivery__item--first p {
+        width: 99px;
+      }
+      ._customer-delivery__item {
+        margin: 0 86px 0 0;
+        padding-bottom: 0;
+        width: 120px;
+      }
+      ._customer-delivery__wrapper {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+      }
+      ._customer-delivery__item::before {
+        left: 0;
+      }
+      ._customer-order__wrapper {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+      }
+      ._customer-order__step {
+        margin: 0 87px 0 0;
+      }
+
+      ._customer-note {
+        width: 327px;
+        padding: 27px 50px 29px 32px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="_customer-wrapper">
+    <h1 class="_customer-main-title">ООО «ЭнергоГрад»</h1>
+    <p class="_customer-main-text">Занимаетесь монтажом энергосетей или планируете поменять проводку во всем доме? Приходите к нам! ООО «ЭнергоГрад» предлагает 40 000 наименований продукции, предназначенной для измерения, распределения и управления энергоресурсами. Уверяем, мы сможем
+      поставить галочку напротив каждой позиции из вашего списка.</p>
+    <p class="_customer-main-text">Наше оборудование, запасные части и комплектующие – это Качество с большой буквы, и эти слова мы подкрепляем гарантией сроком на 12 месяцев. С нами ваша энергосистема выйдет на абсолютно новый уровень.</p>
+    <article class="_customer-products">
+      <h2 class="_customer-products__title _customer-title-item">Мы продаем</h2>
+      <div class="_customer-products__list">
+        <div class="_customer-products__item _customer-products__item--cables">
+          <a href="#" class="_customer-products__link">
+            <img src="img/cables.jpg" alt="Кабельно-проводниковая продукция">
+            <p>Кабельно-проводниковая продукция</p>
+          </a>
+        </div>
+        <div class="_customer-products__item _customer-products__item--wirings">
+          <a href="#" class="_customer-products__link"><img src="img/wirings.jpg" alt="Системы проводки кабеля"><p>Системы проводки кабеля</p></a>
+        </div>
+        <div class="_customer-products__item _customer-products__item--measuring">
+          <a href="#" class="_customer-products__link"><img src="img/measuring.jpg" alt="Средства учета и контроля"><p>Средства измерения учета и контроля электроэнергии</p></a>
+        </div>
+        <div class="_customer-products__item _customer-products__item--switches">
+          <a href="#" class="_customer-products__link"><img src="img/switches.jpg" alt="Выключатели, щитки, УЗО, шкафы"><p>Модульные
+        автоматические выключатели, щитки, УЗО, шкафы</p></a>
+        </div>
+        <div class="_customer-products__item _customer-products__item--lamps">
+          <a href="#" class="_customer-products__link"><img src="img/lamps.jpg" alt="Светильник, прожекторы, лампы"><p>Светильники, прожекторы и лампы.</p></a>
+        </div>
+      </div>
+    </article>
+    <article class="_customer-advantages">
+      <h2 class="_customer-advantages__title _customer-title-item">Что в нас ценят клиенты</h2>
+      <div class="_customer-advantages__item _customer-advantages__item--quality">
+        <h3>Высокое качество</h3>
+        <p class="_customer-advantages__text">Наши кабели не коротят и не стреляют, что подтверждается множеством отзывов от наших клиентов. Мы работаем только с проверенными поставщиками, которые предоставляют сертификаты и придерживаются гарантийных обязательств.</p>
+      </div>
+      <div class="_customer-advantages__item _customer-advantages__item--advice">
+        <h3>Полезные консультации</h3>
+        <p class="_customer-advantages__text">Мы понимаем, что большинство из вас с электричеством на «ты», но ведь есть и те, кто в этом разбирается лишь поверхностно. Наши консультанты всегда помогут с выбором, в деталях разъяснят все отличия и помогут подобрать аналог. Недовольных клиентов
+          у нас не бывает.</p>
+      </div>
+      <div class="_customer-advantages__item _customer-advantages__item--range">
+        <h3>Ассортимент и наличие</h3>
+        <p class="_customer-advantages__text">У нас вы найдете все, и это не пустые слова, 40 000 наименований, всегда заполненный склад и мгновенная отгрузка. Думаем, это мечта любого снабженца.
+        </p>
+      </div>
+      <div class="_customer-advantages__item _customer-advantages__item--sale">
+        <h3>Постоянные акции</h3>
+        <p class="_customer-advantages__text">Уже прикинули смету и получили счет от нашего конкурента? Приходите к нам, и мы сделаем скидку. Но это еще не все: заберите заказ самостоятельно и получите скидку в размере 2%</p>
+      </div>
+      <div class="_customer-advantages__item _customer-advantages__item--showroom">
+        <h3>Собственный шоурум</h3>
+        <p class="_customer-advantages__text">Вы всегда можете приехать, посмотреть ассортимент, получить консультацию от специалиста и оформить заказ. Поездки это не ваше? Тогда звоните, и мы все оформим в телефонном режиме.</p>
+      </div>
+    </article>
+    <article class="_customer-partners">
+      <h2 class="_customer-partners__title _customer-title-item">Наши партнеры</h2>
+      <ul class="_customer-partners__list">
+        <li class="_customer-partners__item _customer-partners__item--ABB"><img src="img/ABB.png" width="99" height="38" alt="ABB"></li>
+        <li class="_customer-partners__item _customer-partners__item--DEKraft"><img src="img/DEKraft.png" width="109" height="39" alt="DEKraft"></li>
+        <li class="_customer-partners__item _customer-partners__item--DKC"><img src="img/DKC.png" width="150" height="39" alt="DKC"></li>
+        <li class="_customer-partners__item _customer-partners__item--IEK"><img src="img/IEK.png" width="79" height="39" alt="IEK"></li>
+        <li class="_customer-partners__item _customer-partners__item--Shneider"><img src="img/Schneider.png" width="131" height="39" alt="Schneider"></li>
+        <li class="_customer-partners__item _customer-partners__item--tech"><img src="img/light-tech.png" width="112" height="39" alt="Световые технологии"></li>
+      </ul>
+    </article>
+    <article class="_customer-order">
+      <h2 class="_customer-order__title _customer-title-item">Заказ и оплата</h2>
+      <div class="_customer-order__wrapper">
+        <div class="_customer-order__step _customer-order__step--first">
+          <p>Выберите интересующую продукцию</p>
+        </div>
+        <div class="_customer-order__step _customer-order__step--second">
+          <p>Проконсультируйтесь с менеджером</p>
+        </div>
+        <div class="_customer-order__step _customer-order__step--third">
+          <p>Оплатите счет (возможна отсрочка платежа)</p>
+        </div>
+      </div>
+    </article>
+    <article class="_customer-delivery">
+      <h2 class="_customer-delivery__title _customer-title-item">Доставка</h2>
+      <div class="_customer-delivery__wrapper">
+        <div class="_customer-delivery__item _customer-delivery__item--pickup">
+          <p>Самовывоз</p>
+        </div>
+        <div class="_customer-delivery__item _customer-delivery__item--pek">
+          <p>Доставка<br> транспортной компанией (Деловые Линии, ПЭК)</p>
+        </div>
+        <div class="_customer-delivery__item _customer-delivery__item--car">
+          <p>Доставка<br> собственным автопарком (по Екатеринбургу)</p>
+        </div>
+        <div class="_customer-note">
+          <div class="_customer-note__item _customer-note__item--first">
+            <span>Важно 1.</span>
+            <p>Доставка по городу выполняется на следующий день после внесения предоплаты.</p>
+          </div>
+          <div class="_customer-note__item _customer-note__item--second">
+            <span>Важно 2.</span>
+            <p>При сумме заказа от 15 000 руб. доставка за наш счет!</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</body>
+
+</html>
